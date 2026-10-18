@@ -1,52 +1,68 @@
 {
   "name": "starter-ts",
-  "description": "📦️ Zero-config TypeScript template for rapid development. Pre-configured with modern tooling to start coding",
-  "author": "Luis Monsalve",
   "version": "0.0.0",
+  "description": "📦️ Zero-config TypeScript template for rapid development. Pre-configured with modern tooling to start coding",
+  "keywords": [
+    "clean-code",
+    "git",
+    "github",
+    "starter-ts",
+    "typescript",
+    "zero-config"
+  ],
   "homepage": "https://github.com/TheElegantCoding/starter-ts#readme",
+  "bugs": {
+    "url": "https://github.com/TheElegantCoding/starter-ts/issues"
+  },
+  "author": "Luis Monsalve",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheElegantCoding/starter-ts.git"
   },
-  "keywords": [
-    "typescript",
-    "github",
-    "git",
-    "clean-code",
-    "starter-ts",
-    "zero-config"
+  "files": [
+    "./dist"
   ],
-  "bugs": {
-    "url": "https://github.com/TheElegantCoding/starter-ts/issues"
-  },
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./format.ts": {
+      "import": "./dist/src/format.js",
+      "require": "./dist/src/format.cjs"
     }
-  },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": ["./dist"],
-  "engines": {
-    "node": ">=22.17.0",
-    "bun": ">=1.1.0"
   },
   "scripts": {
     "preinstall": "npx only-allow bun",
     "postinstall": "bunx gitlys init",
     "dev": "tsup --watch",
-    "build": "bun run type:check && bun run lint && tsup",
+    "build": "bun run type:check && bun run lint && bun run format && tsup",
     "type:check": "tsc --noEmit",
-    "lint": "eslint . --fix --cache",
+    "lint": "oxlint --fix",
+    "format": "oxfmt --check",
     "security:audit": "bun audit",
+    "inspector": "bunx oxlint-config-inspector dev",
     "release": "bun run build && bunx gitlys release"
   },
+  "dependencies": {
+    "@astrojs/compiler-rs": "0.5.2"
+  },
   "devDependencies": {
-    "eslint-config-universal-code": "^1.1.4",
+    "@oxlint/migrate": "1.88.0",
+    "@stacklys/tsconfig": "1.0.0",
+    "@types/node": "26.6.5",
     "gitlys": "^2.2.4",
+    "oxfmt": "0.73.0",
+    "oxlint": "1.88.0",
+    "oxlint-tsgolint": "7.0.2004",
     "tsup": "^9.0.0",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "bun": ">=1.1.0",
+    "node": ">=22.17.0"
   }
 }
