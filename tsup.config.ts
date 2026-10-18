@@ -1,10 +1,10 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: ['src/index.ts', 'src/format.ts'],
   format: ['esm'],
-  dts: true,
   splitting: false,
   clean: true,
-  minify: true
+  minify: true,
+  external: ['oxfmt', 'oxlint']
 });
