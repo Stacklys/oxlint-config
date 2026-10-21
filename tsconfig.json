@@ -1,5 +1,5 @@
 {
-  "extends": "@stacklys/tsconfig/strict",
+  "extends": ["@stacklys/tsconfig/strict"],
   "compilerOptions": {
     "paths": {
       "@src/*": ["./src/*"],
