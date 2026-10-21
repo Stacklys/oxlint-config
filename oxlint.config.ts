@@ -1,6 +1,13 @@
-import { defineConfig } from "oxlint";
-import baseConfig from "./dist/index.js";
+import { oxlintConfig } from './dist/index.mjs';
 
-export default defineConfig({
-  extends: [baseConfig],
+const config = oxlintConfig({
+  typescript: true,
+  a11y: true,
+  react: true,
+  nextjs: true,
+  unicorn: true,
+  vitest: true,
+  astro: true
 });
+
+export default config;
