@@ -1,7 +1,8 @@
 import { oxfmtConfig } from './dist/index.mjs';
 
 const config = oxfmtConfig({
-  astro: true
+  astro: true,
+  svelte: true
 });
 
 export default config;
