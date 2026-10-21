@@ -1,4 +1,4 @@
-import { oxlintConfig } from "./dist/index.mjs";
+import { oxlintConfig } from './dist/index.mjs';
 
 const config = oxlintConfig({
   typescript: true,
@@ -7,7 +7,7 @@ const config = oxlintConfig({
   nextjs: true,
   unicorn: true,
   vitest: true,
-  astro: true,
+  astro: true
 });
 
 export default config;
