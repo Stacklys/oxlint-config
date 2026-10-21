@@ -27,19 +27,19 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
     },
-    "./format.ts": {
-      "import": "./dist/src/format.js",
-      "require": "./dist/src/format.cjs"
+    "./format": {
+      "types": "./dist/format.d.ts",
+      "import": "./dist/format.mjs"
     }
   },
   "scripts": {
-    "preinstall": "npx only-allow bun",
-    "postinstall": "bunx gitlys init",
-    "dev": "tsup --watch",
-    "build": "bun run type:check && bun run lint && bun run format && tsup",
+    "prepublishOnly": "npm run build",
+    "setup": "bunx gitlys init",
+    "dev": "tsdown --watch",
+    "build": "bun run type:check && bun run lint && bun run format && tsdown",
     "type:check": "tsc --noEmit",
     "lint": "oxlint --fix",
     "format": "oxfmt --check",
@@ -48,18 +48,18 @@
     "release": "bun run build && bunx gitlys release"
   },
   "dependencies": {
-    "@astrojs/compiler-rs": "0.5.2"
+    "@astrojs/compiler-rs": "0.5.2",
+    "oxfmt": "0.74.0",
+    "oxlint": "1.89.0",
+    "oxlint-tsgolint": "7.0.2004"
   },
   "devDependencies": {
-    "@oxlint/migrate": "1.88.0",
     "@stacklys/tsconfig": "1.0.0",
     "@types/node": "26.6.5",
-    "gitlys": "^2.2.4",
-    "oxfmt": "0.73.0",
-    "oxlint": "1.88.0",
-    "oxlint-tsgolint": "7.0.2004",
-    "tsup": "^9.0.0",
-    "typescript": "^6.0.3"
+    "astro": "7.4.2",
+    "gitlys": "2.2.4",
+    "tsdown": "0.23.1",
+    "typescript": "6.0.3"
   },
   "engines": {
     "bun": ">=1.1.0",
