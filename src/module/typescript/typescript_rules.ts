@@ -11,36 +11,6 @@ const typescriptRules: RuleMap = {
   ],
   'typescript/method-signature-style': 'error',
   'typescript/no-deprecated': 'error',
-  'typescript/naming-convention': [
-    'error',
-    {
-      selector: 'default',
-      format: ['camelCase', 'PascalCase', 'snake_case', 'UPPER_CASE'],
-      leadingUnderscore: 'allow'
-    },
-    {
-      selector: 'typeLike',
-      format: ['PascalCase', 'UPPER_CASE', 'camelCase', 'snake_case']
-    },
-    {
-      selector: 'variable',
-      format: ['camelCase', 'UPPER_CASE', 'PascalCase', 'snake_case']
-    },
-    {
-      format: null,
-      modifiers: ['requiresQuotes'],
-      selector: [
-        'classProperty',
-        'objectLiteralProperty',
-        'typeProperty',
-        'classMethod',
-        'objectLiteralMethod',
-        'typeMethod',
-        'accessor',
-        'enumMember'
-      ]
-    }
-  ],
   'typescript/no-confusing-non-null-assertion': 'error',
   'typescript/no-generated-empty-object-type': 'error',
   'typescript/no-import-type-side-effects': 'error',
@@ -65,7 +35,6 @@ const typescriptRules: RuleMap = {
   'typescript/related-getter-setter-pairs': 'error',
   'typescript/switch-exhaustiveness-check': 'error',
   'typescript/strict-void-return': 'error',
-  'typescript/strict-boolean-expressions': 'error',
   'typescript/return-await': 'error',
   'typescript/ban-ts-comment': [
     'error',
@@ -101,7 +70,6 @@ const typescriptRules: RuleMap = {
   'typescript/await-thenable': 'error',
   'typescript/no-array-delete': 'error',
   'typescript/no-base-to-string': 'error',
-  'typescript/no-confusing-void-expression': 'error',
   'typescript/no-floating-promises': 'error',
   'typescript/no-for-in-array': 'error',
   'typescript/no-implied-eval': 'error',
