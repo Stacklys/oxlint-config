@@ -1,7 +1,7 @@
 {
-  "name": "starter-ts",
+  "name": "@stacklys/oxlint-config",
   "version": "0.0.0",
-  "description": "📦️ Zero-config TypeScript template for rapid development. Pre-configured with modern tooling to start coding",
+  "description": "📦️ High-performance, zero-config linting and formatting configuration powered by Oxlint.",
   "keywords": [
     "clean-code",
     "git",
@@ -10,14 +10,14 @@
     "typescript",
     "zero-config"
   ],
-  "homepage": "https://github.com/TheElegantCoding/starter-ts#readme",
+  "homepage": "https://github.com/Stacklys/oxlint-config#readme",
   "bugs": {
-    "url": "https://github.com/TheElegantCoding/starter-ts/issues"
+    "url": "https://github.com/Stacklys/oxlint-config/issues"
   },
   "author": "Luis Monsalve",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheElegantCoding/starter-ts.git"
+    "url": "git+https://github.com/Stacklys/oxlint-config.git"
   },
   "files": [
     "./dist"
@@ -45,7 +45,7 @@
     "format": "oxfmt --check",
     "security:audit": "bun audit",
     "inspector": "bunx oxlint-config-inspector dev",
-    "release": "bun run build && bunx gitlys release"
+    "release": "bunx gitlys release"
   },
   "dependencies": {
     "@astrojs/compiler-rs": "0.5.2",
