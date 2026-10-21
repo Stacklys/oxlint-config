@@ -1,11 +1,11 @@
-import type { ConfigOption } from '@src/global/type/config_option';
+import type { FormatterOption } from '@src/global/type/config_option';
 
 import { INDENT, MAX_LINE_LENGTH, defaultFormatter } from '@src/global/constant/default_option';
 import { IGNORE } from '@src/global/constant/ignore';
 
 import { defineConfig } from 'oxfmt';
 
-const formatConfig = (options: ConfigOption = defaultFormatter) => {
+const formatConfig = (options: FormatterOption = defaultFormatter) => {
   const config = defineConfig({
     printWidth: MAX_LINE_LENGTH,
     tabWidth: INDENT,
