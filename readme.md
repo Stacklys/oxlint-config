@@ -142,7 +142,7 @@ yarn i -D @stacklys/oxlint-config
 To use `@stacklys/oxlint-config`, extend it in your linter configuration file. For example, in your `oxlint.config.ts`:
 
 ```ts
-import { oxlintConfig } from "@stacklys/oxlint-config";
+import { oxlintConfig } from '@stacklys/oxlint-config';
 
 const config = oxlintConfig();
 
@@ -152,7 +152,7 @@ export default config;
 If you want do use the formatter you can add the following to your `oxfmt.config.ts`:
 
 ```ts
-import { oxfmtConfig } from "@stacklys/oxlint-config";
+import { oxfmtConfig } from '@stacklys/oxlint-config';
 
 const config = oxfmtConfig();
 
@@ -175,7 +175,7 @@ export default config;
 To configure `@stacklys/oxlint-config`, you can pass options to the `oxlintConfig` function in your `oxlint.config.ts`. For example:
 
 ```ts
-import { oxlintConfig } from "@stacklys/oxlint-config";
+import { oxlintConfig } from '@stacklys/oxlint-config';
 
 const config = oxlintConfig({
   typescript: true,
@@ -184,7 +184,7 @@ const config = oxlintConfig({
   nextjs: true,
   unicorn: true,
   vitest: true,
-  astro: true,
+  astro: true
 });
 
 export default config;
@@ -193,11 +193,11 @@ export default config;
 For configuring the formatter, you can pass options to the `oxfmtConfig` function in your `oxfmt.config.ts`. For example:
 
 ```ts
-import { oxfmtConfig } from "@stacklys/oxlint-config";
+import { oxfmtConfig } from '@stacklys/oxlint-config';
 
 const config = oxfmtConfig({
   astro: true,
-  svelte: true,
+  svelte: true
 });
 
 export default config;
@@ -206,18 +206,18 @@ export default config;
 In case you can to override or configure additional rules inside the pre-defined configuration, you can pass the object in the respective configuration functions as shown below:
 
 ```ts
-import { oxlintConfig } from "@stacklys/oxlint-config";
+import { oxlintConfig } from '@stacklys/oxlint-config';
 
 const lintConfig = oxlintConfig(
   {
-    typescript: true,
+    typescript: true
   },
   {
     options: { typeAware: true },
     rules: {
-      "typescript/type-annotation-spacing": "error",
-    },
-  },
+      'typescript/type-annotation-spacing': 'error'
+    }
+  }
 );
 
 export default lintConfig;
@@ -227,12 +227,12 @@ The default configuration for `oxlintConfig` is the next one:
 
 ```ts
 // Example of default config
-import { oxlintConfig } from "@stacklys/oxlint-config";
+import { oxlintConfig } from '@stacklys/oxlint-config';
 
 const config = oxlintConfig({
   typescript: true,
   unicorn: true,
-  vitest: true,
+  vitest: true
 });
 
 export default config;
@@ -241,7 +241,7 @@ export default config;
 For the formatter, is the next one:
 
 ```ts
-import { oxfmtConfig } from "@stacklys/oxlint-config";
+import { oxfmtConfig } from '@stacklys/oxlint-config';
 
 const config = oxfmtConfig({
   printWidth: 180,
@@ -249,45 +249,45 @@ const config = oxfmtConfig({
   useTabs: false,
   semi: true,
   singleQuote: true,
-  trailingComma: "none",
-  arrowParens: "always",
+  trailingComma: 'none',
+  arrowParens: 'always',
   ignorePatterns: IGNORE, // Patterns to ignore during formatting
   sortPackageJson: true,
   astro: options.astro,
   bracketSameLine: false,
   bracketSpacing: true,
-  endOfLine: "lf",
-  htmlWhitespaceSensitivity: "css",
+  endOfLine: 'lf',
+  htmlWhitespaceSensitivity: 'css',
   insertFinalNewline: false,
   jsxSingleQuote: true,
-  objectWrap: "preserve",
-  proseWrap: "preserve",
-  quoteProps: "as-needed",
+  objectWrap: 'preserve',
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
   singleAttributePerLine: true,
   sortTailwindcss: {
-    preserveDuplicates: false,
+    preserveDuplicates: false
   },
   sortImports: {
     newlinesBetween: true,
     partitionByNewline: false,
-    internalPattern: ["~/", "@/", "@", "#"],
+    internalPattern: ['~/', '@/', '@', '#'],
     groups: [
-      "type",
-      "side_effect_style",
-      "side_effect",
-      "style",
-      "index",
-      "sibling",
-      "parent",
-      "subpath",
-      "internal",
-      "builtin",
-      "external",
-      "import",
-    ],
+      'type',
+      'side_effect_style',
+      'side_effect',
+      'style',
+      'index',
+      'sibling',
+      'parent',
+      'subpath',
+      'internal',
+      'builtin',
+      'external',
+      'import'
+    ]
   },
   svelte: Boolean(options.svelte),
-  vueIndentScriptAndStyle: true,
+  vueIndentScriptAndStyle: true
 });
 
 export default config;
