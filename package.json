@@ -35,6 +35,9 @@
       "import": "./dist/format.mjs"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "setup": "bunx gitlys init",
     "dev": "tsdown --watch",
@@ -44,7 +47,8 @@
     "format": "oxfmt",
     "security:audit": "bun audit",
     "inspector": "bunx oxlint-config-inspector dev",
-    "release": "bun run build && bunx gitlys release"
+    "release": "bun run build && bunx gitlys release",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@astrojs/compiler-rs": "0.5.2",
