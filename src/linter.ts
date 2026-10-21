@@ -44,6 +44,7 @@ const oxlintConfig = (options: LinterOption, extraOptions?: OxlintConfig): Oxlin
       window: 'readonly',
       navigator: 'readonly',
       fetch: 'readonly',
+      requestAnimationFrame: 'readonly',
       console: 'readonly',
       ...(options.astro ? { Astro: 'readonly' } : {}),
       ...extraOptions?.globals
