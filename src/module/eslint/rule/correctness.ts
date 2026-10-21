@@ -20,7 +20,6 @@ const correctnessRules: RuleMap = {
   'no-dupe-else-if': 'error',
   'no-dupe-keys': 'error',
   'no-duplicate-case': 'error',
-  'no-duplicate-imports': 'error',
   'no-empty': 'error',
   'no-empty-character-class': 'error',
   'no-empty-pattern': 'error',
