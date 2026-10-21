@@ -1,12 +1,16 @@
-type ConfigOption = {
+type LinterOption = {
   readonly astro?: boolean;
-  readonly svelte?: boolean;
   readonly typescript?: boolean;
   readonly react?: boolean;
   readonly nextjs?: boolean;
-  readonly vue?: boolean;
   readonly vitest?: boolean;
   readonly unicorn?: boolean;
+  readonly a11y?: boolean;
 };
 
-export type { ConfigOption };
+type FormatterOption = {
+  readonly astro?: boolean;
+  readonly svelte?: boolean;
+};
+
+export type { LinterOption, FormatterOption };
