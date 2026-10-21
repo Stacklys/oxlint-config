@@ -1,6 +1,6 @@
-import { formatConfig } from './dist/format.mjs';
+import { oxfmtConfig } from './dist/format.mjs';
 
-const config = formatConfig({
+const config = oxfmtConfig({
   astro: true
 });
 
