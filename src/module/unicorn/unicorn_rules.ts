@@ -1,4 +1,6 @@
-const unicornRules = {
+import type { RuleMap } from '@src/global/type/rule_type';
+
+const unicornRules: RuleMap = {
   'unicorn/catch-error-name': 'error',
   'unicorn/consistent-assert': 'error',
   'unicorn/consistent-date-clone': 'error',
@@ -10,18 +12,20 @@ const unicornRules = {
   'unicorn/explicit-timer-delay': 'error',
   'unicorn/explicit-length-check': 'error',
   'unicorn/consistent-existence-index-check': 'error',
-  'unicorn/filename-case': ['error', {
-    cases: {
-      camelCase: false,
-      kebabCase: false,
-      pascalCase: false,
-      snakeCase: true
+  'unicorn/filename-case': [
+    'error',
+    {
+      cases: {
+        camelCase: false,
+        kebabCase: false,
+        pascalCase: false,
+        snakeCase: true
+      }
     }
-  }],
+  ],
   'unicorn/new-for-builtins': 'error',
   'unicorn/no-abusive-eslint-disable': 'error',
   'unicorn/no-accessor-recursion': 'error',
-  'unicorn/no-anonymous-default-export': 'error',
   'unicorn/no-array-callback-reference': 'error',
   'unicorn/no-array-method-this-argument': 'error',
   'unicorn/no-array-reverse': 'error',
@@ -69,9 +73,7 @@ const unicornRules = {
   'unicorn/number-literal-case': 'error',
   'unicorn/prefer-add-event-listener': 'error',
   'unicorn/no-useless-iterator-to-array': 'error',
-  'unicorn/prefer-array-find': ['error', {
-    checkFromLast: true
-  }],
+  'unicorn/prefer-array-find': 'error',
   'unicorn/prefer-array-flat-map': 'error',
   'unicorn/prefer-array-index-of': 'error',
   'unicorn/prefer-array-some': 'error',
@@ -101,9 +103,12 @@ const unicornRules = {
   'unicorn/prefer-math-min-max': 'error',
   'unicorn/prefer-number-coercion': 'error',
   'unicorn/prefer-includes': 'error',
-  'unicorn/prefer-object-from-entries': ['error', {
-    functions: ['fromPairs', 'R.fromPairs']
-  }],
+  'unicorn/prefer-object-from-entries': [
+    'error',
+    {
+      functions: ['fromPairs', 'R.fromPairs']
+    }
+  ],
   'unicorn/prefer-optional-catch-binding': 'error',
   'unicorn/prefer-prototype-methods': 'error',
   'unicorn/prefer-query-selector': 'error',
