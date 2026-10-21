@@ -13,13 +13,7 @@ const importRules: RuleMap = {
   'import/first': 'error',
   'import/default': 'error',
   'import/no-empty-named-blocks': 'error',
-  'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
-  'import/no-anonymous-default-export': [
-    'error',
-    {
-      allowCallExpression: false
-    }
-  ]
+  'import/consistent-type-specifier-style': ['error', 'prefer-top-level']
 };
 
 export { importRules };
