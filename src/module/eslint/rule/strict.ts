@@ -1,11 +1,6 @@
-import {
-  COMPLEXITY,
-  MAX_DEPTH,
-  MAX_LINE,
-  MAX_STATEMENTS
-} from '@src/global/constant/default_option';
-
 import type { RuleMap } from '@src/global/type/rule_type';
+
+import { COMPLEXITY, MAX_DEPTH, MAX_LINE, MAX_STATEMENTS } from '@src/global/constant/default_option';
 
 const strictRules: RuleMap = {
   'accessor-pairs': 'error',
@@ -27,24 +22,15 @@ const strictRules: RuleMap = {
     }
   ],
   'class-methods-use-this': 'error',
-  'id-length': ['error', {
-    min: 2,
-    exceptions: [
-      'id',
-      'i',
-      'j',
-      'k',
-      'z',
-      'x',
-      'y'
-    ]
-  }],
-  'init-declarations': 'error',
-  'logical-assignment-operators': [
+  'id-length': [
     'error',
-    'always',
-    { enforceForIfStatements: true }
+    {
+      min: 2,
+      exceptions: ['id', 'i', 'j', '-', '_', '__', 'k', 'z', 'x', 'y']
+    }
   ],
+  'init-declarations': 'error',
+  'logical-assignment-operators': ['error', 'always', { enforceForIfStatements: true }],
   'max-classes-per-file': ['error', 1],
   'max-depth': ['error', MAX_DEPTH],
   'max-lines': ['error', { max: MAX_LINE, skipBlankLines: true, skipComments: true }],
@@ -73,20 +59,7 @@ const strictRules: RuleMap = {
   'no-labels': 'error',
   'no-lone-blocks': 'error',
   'no-loop-func': 'error',
-  'no-magic-numbers': ['error', { ignore: [
-    -1,
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ], ignoreArrayIndexes: true }],
+  'no-magic-numbers': ['error', { ignore: [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], ignoreArrayIndexes: true }],
   'no-multi-assign': 'error',
   'no-multi-str': 'error',
   'no-negated-condition': 'error',
@@ -95,24 +68,27 @@ const strictRules: RuleMap = {
   'no-new-func': 'error',
   'no-new-wrappers': 'error',
   'no-object-constructor': 'error',
-  'no-param-reassign': ['error', {
-    ignorePropertyModificationsFor: [
-      'acc',
-      'accumulator',
-      'e',
-      'event',
-      'ctx',
-      'context',
-      'req',
-      'request',
-      'res',
-      'node',
-      'response',
-      '$scope',
-      'staticContext'
-    ],
-    props: true
-  }],
+  'no-param-reassign': [
+    'error',
+    {
+      ignorePropertyModificationsFor: [
+        'acc',
+        'accumulator',
+        'e',
+        'event',
+        'ctx',
+        'context',
+        'req',
+        'request',
+        'res',
+        'node',
+        'response',
+        '$scope',
+        'staticContext'
+      ],
+      props: true
+    }
+  ],
   'no-plusplus': 'error',
   'no-promise-executor-return': 'error',
   'no-proto': 'error',
@@ -142,16 +118,18 @@ const strictRules: RuleMap = {
   'no-sequences': 'error',
   'no-shadow': ['error', { builtinGlobals: false, hoist: 'all', ignoreOnInitialization: false }],
   'no-template-curly-in-string': 'error',
-  'no-ternary': 'error',
   'no-throw-literal': 'error',
   'no-undef': 'error',
   'no-undefined': 'error',
-  'no-underscore-dangle': ['error', {
-    allow: [],
-    allowAfterSuper: false,
-    allowAfterThis: false,
-    enforceInMethodNames: true
-  }],
+  'no-underscore-dangle': [
+    'error',
+    {
+      allow: [],
+      allowAfterSuper: false,
+      allowAfterThis: false,
+      enforceInMethodNames: true
+    }
+  ],
   'no-unneeded-ternary': ['error', { defaultAssignment: false }],
   'no-use-before-define': ['error', { classes: true, functions: true, variables: true }],
   'no-useless-call': 'error',
