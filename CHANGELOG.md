@@ -16,6 +16,21 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.1] - 2026-10-21
+
+- [[`f3174bb`](https://github.com/Stacklys/oxlint-config/commit/f3174bb)] - **style:** update oxfmt.config.ts to include svelte configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`edf4d19`](https://github.com/Stacklys/oxlint-config/commit/edf4d19)] - **style:** add linter.ts with oxlintConfig function for linting configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`b4e22b8`](https://github.com/Stacklys/oxlint-config/commit/b4e22b8)] - **style:** simplify index.ts by re-exporting oxlintConfig and oxfmtConfig by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`05f7b8f`](https://github.com/Stacklys/oxlint-config/commit/05f7b8f)] - **style:** add oxfmtConfig function to formatter.ts for configuration management by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`7ccfef6`](https://github.com/Stacklys/oxlint-config/commit/7ccfef6)] - **style:** remove unused format.ts file by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`da1972d`](https://github.com/Stacklys/oxlint-config/commit/da1972d)] - **style:** remove unused export entry for format in package.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`f0cb186`](https://github.com/Stacklys/oxlint-config/commit/f0cb186)] - **style:** update import path in oxfmt.config.ts to use index.mjs by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`c7d43df`](https://github.com/Stacklys/oxlint-config/commit/c7d43df)] - **style:** remove unused entry point from tsdown.config.ts by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`8aef821`](https://github.com/Stacklys/oxlint-config/commit/8aef821)] - **style:** add publishConfig and npm publish script to package.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`2ab0510`](https://github.com/Stacklys/oxlint-config/commit/2ab0510)] - **style:** update npm scripts for improved build and format commands by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`2722f5a`](https://github.com/Stacklys/oxlint-config/commit/2722f5a)] - **style:** standardize quotes in import statements and format configuration examples by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`59d8ccf`](https://github.com/Stacklys/oxlint-config/commit/59d8ccf)] - **style:** standardize quotes and remove trailing commas in oxlint.config.ts by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.0] - 2026-10-21
 
 - [[`8698c13`](https://github.com/Stacklys/oxlint-config/commit/8698c13)] - **style:** format styleRules object for improved readability by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
