@@ -1,4 +1,4 @@
-import { oxfmtConfig } from './dist/format.mjs';
+import { oxfmtConfig } from './dist/index.mjs';
 
 const config = oxfmtConfig({
   astro: true
