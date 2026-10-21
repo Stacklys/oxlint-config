@@ -4,25 +4,27 @@ const styleRules: RuleMap = {
   'arrow-body-style': ['error', 'always'],
   curly: ['error', 'all'],
   'func-style': ['error', 'expression'],
-  'new-cap': ['error', {
-    capIsNew: false,
-    capIsNewExceptions: [
-      'Immutable.Map',
-      'Immutable.Set',
-      'Immutable.List'
-    ],
-    newIsCap: true,
-    newIsCapExceptions: []
-  }],
+  'new-cap': [
+    'error',
+    {
+      capIsNew: false,
+      capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
+      newIsCap: true,
+      newIsCapExceptions: []
+    }
+  ],
   'unicode-bom': ['error', 'never'],
   'no-else-return': ['error', { allowElseIf: false }],
   'no-lonely-if': 'error',
   'no-useless-computed-key': 'error',
-  'no-useless-rename': ['error', {
-    ignoreDestructuring: false,
-    ignoreExport: false,
-    ignoreImport: false
-  }],
+  'no-useless-rename': [
+    'error',
+    {
+      ignoreDestructuring: false,
+      ignoreExport: false,
+      ignoreImport: false
+    }
+  ],
   'object-shorthand': [
     'error',
     'always',
@@ -33,14 +35,20 @@ const styleRules: RuleMap = {
   ],
   'one-var': ['error', 'never'],
   'operator-assignment': ['error', 'always'],
-  'prefer-arrow-callback': ['error', {
-    allowNamedFunctions: false,
-    allowUnboundThis: true
-  }],
-  'prefer-const': ['error', {
-    destructuring: 'any',
-    ignoreReadBeforeAssign: true
-  }],
+  'prefer-arrow-callback': [
+    'error',
+    {
+      allowNamedFunctions: false,
+      allowUnboundThis: true
+    }
+  ],
+  'prefer-const': [
+    'error',
+    {
+      destructuring: 'any',
+      ignoreReadBeforeAssign: true
+    }
+  ],
   'prefer-destructuring': [
     'error',
     {
@@ -60,11 +68,7 @@ const styleRules: RuleMap = {
   'prefer-template': 'error',
   'symbol-description': 'error',
   'vars-on-top': 'error',
-  'func-names': [
-    'error',
-    'as-needed',
-    { generators: 'never' }
-  ]
+  'func-names': ['error', 'as-needed', { generators: 'never' }]
 };
 
 export { styleRules };
