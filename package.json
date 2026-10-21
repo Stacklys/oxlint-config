@@ -29,10 +29,6 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs"
-    },
-    "./format": {
-      "types": "./dist/format.d.ts",
-      "import": "./dist/format.mjs"
     }
   },
   "publishConfig": {
