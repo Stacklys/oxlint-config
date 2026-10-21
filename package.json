@@ -36,16 +36,15 @@
     }
   },
   "scripts": {
-    "prepublishOnly": "npm run build",
     "setup": "bunx gitlys init",
     "dev": "tsdown --watch",
     "build": "bun run type:check && bun run lint && bun run format && tsdown",
     "type:check": "tsc --noEmit",
     "lint": "oxlint --fix",
-    "format": "oxfmt --check",
+    "format": "oxfmt",
     "security:audit": "bun audit",
     "inspector": "bunx oxlint-config-inspector dev",
-    "release": "bunx gitlys release"
+    "release": "bun run build && bunx gitlys release"
   },
   "dependencies": {
     "@astrojs/compiler-rs": "0.5.2",
