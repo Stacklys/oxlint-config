@@ -39,7 +39,7 @@
     "dev": "tsdown --watch",
     "build": "bun run type:check && bun run lint && bun run format && tsdown",
     "type:check": "tsc --noEmit",
-    "lint": "oxlint --fix --cache",
+    "lint": "oxlint --fix",
     "format": "oxfmt",
     "security:audit": "bun audit",
     "inspector": "bunx oxlint-config-inspector dev",
