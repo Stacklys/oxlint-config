@@ -39,7 +39,7 @@
     "dev": "tsdown --watch",
     "build": "bun run type:check && bun run lint && bun run format && tsdown",
     "type:check": "tsc --noEmit",
-    "lint": "oxlint --fix",
+    "lint": "oxlint --fix --cache",
     "format": "oxfmt",
     "security:audit": "bun audit",
     "inspector": "bunx oxlint-config-inspector dev",
@@ -57,6 +57,7 @@
     "@types/node": "26.6.5",
     "astro": "7.4.2",
     "gitlys": "2.2.4",
+    "globals": "17.13.0",
     "tsdown": "0.23.1",
     "typescript": "6.0.3"
   },
