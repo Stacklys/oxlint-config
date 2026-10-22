@@ -1,7 +1,6 @@
 import type { RuleMap } from '@src/global/type/rule_type';
 
 const importRules: RuleMap = {
-  'import/unambiguous': 'error',
   'import/no-webpack-loader-syntax': 'error',
   'import/no-unassigned-import': 'error',
   'import/no-self-import': 'error',
