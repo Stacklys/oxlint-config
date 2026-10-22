@@ -1,6 +1,7 @@
 import type { LinterOption } from '@src/global/type/config_option';
 import type { OxlintConfig } from 'oxlint';
 
+import { oxlintGlobals } from '@src/global/util/adapt_global';
 import { pluginOption } from '@src/global/util/plugin_option';
 import { a11yRules } from '@src/module/a11y/a11y_rules';
 import { astroOverride } from '@src/module/astro/astro_override';
@@ -11,6 +12,7 @@ import { nodeRules } from '@src/module/node/node';
 import { oxcRules } from '@src/module/oxc/oxc';
 import { promiseRules } from '@src/module/promise/promise_rules';
 import { reactRules } from '@src/module/react/react_rules';
+import { typescriptOverrides } from '@src/module/typescript/typescript_overrides';
 import { typescriptRules } from '@src/module/typescript/typescript_rules';
 import { unicornRules } from '@src/module/unicorn/unicorn_rules';
 import { vitestRules } from '@src/module/vitest/vitest_rules';
@@ -39,13 +41,13 @@ const oxlintConfig = (options: LinterOption, extraOptions?: OxlintConfig): Oxlin
   return defineConfig({
     plugins,
     rules,
+    env: {
+      browser: true,
+      es2024: true,
+      node: true
+    },
     globals: {
-      document: 'readonly',
-      window: 'readonly',
-      navigator: 'readonly',
-      fetch: 'readonly',
-      requestAnimationFrame: 'readonly',
-      console: 'readonly',
+      ...oxlintGlobals(),
       ...(options.astro ? { Astro: 'readonly' } : {}),
       ...extraOptions?.globals
     },
@@ -54,6 +56,7 @@ const oxlintConfig = (options: LinterOption, extraOptions?: OxlintConfig): Oxlin
       ...extraNestedOptions
     },
     overrides: [
+      ...typescriptOverrides,
       ...(options.astro ? astroOverride : []),
       ...(extraOptions?.overrides ?? []),
       {
