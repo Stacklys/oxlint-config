@@ -22,7 +22,6 @@ const typescriptRules: RuleMap = {
   'typescript/no-var-requires': 'error',
   'typescript/no-useless-empty-export': 'error',
   'typescript/no-useless-default-assignment': 'error',
-  'typescript/no-unsafe-type-assertion': 'error',
   'typescript/only-throw-error': 'error',
   'typescript/non-nullable-type-assertion-style': 'error',
   'typescript/parameter-properties': 'error',
