@@ -26,10 +26,9 @@ const strictRules: RuleMap = {
     'error',
     {
       min: 2,
-      exceptions: ['id', 'i', 'j', '-', '_', '__', 'k', 'z', 'x', 'y']
+      exceptions: ['id', 'i', 'j', '-', 'T', 'K', '_', '__', 'k', 'z', 'x', 'y']
     }
   ],
-  'init-declarations': 'error',
   'logical-assignment-operators': ['error', 'always', { enforceForIfStatements: true }],
   'max-classes-per-file': ['error', 1],
   'max-depth': ['error', MAX_DEPTH],
@@ -120,7 +119,6 @@ const strictRules: RuleMap = {
   'no-template-curly-in-string': 'error',
   'no-throw-literal': 'error',
   'no-undef': 'error',
-  'no-undefined': 'error',
   'no-underscore-dangle': [
     'error',
     {
