@@ -64,7 +64,6 @@ const correctnessRules: RuleMap = {
   'require-yield': 'error',
   'id-denylist': 'error',
   'use-isnan': 'error',
-  'require-unicode-regexp': 'error',
   'valid-typeof': ['error', { requireStringLiterals: true }]
 };
 
