@@ -16,6 +16,21 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.2] - 2026-10-22
+
+- [[`e250e67`](https://github.com/Stacklys/oxlint-config/commit/e250e67)] - **style:** remove cache option from lint script in package.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`f1c8bbe`](https://github.com/Stacklys/oxlint-config/commit/f1c8bbe)] - **style:** enhance linter configuration by adding TypeScript overrides and updating environment settings by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`5ed29ea`](https://github.com/Stacklys/oxlint-config/commit/5ed29ea)] - **style:** remove 'require-unicode-regexp' rule from correctnessRules by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`5ede183`](https://github.com/Stacklys/oxlint-config/commit/5ede183)] - **style:** update exceptions in strictRules configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`dc14b77`](https://github.com/Stacklys/oxlint-config/commit/dc14b77)] - **style:** remove 'import/unambiguous' rule from astroOverride configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`37b37fb`](https://github.com/Stacklys/oxlint-config/commit/37b37fb)] - **style:** add oxlintGlobals function to adapt global variable access by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`72542b6`](https://github.com/Stacklys/oxlint-config/commit/72542b6)] - **style:** remove 'import/unambiguous' rule from importRules by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`d0f6b96`](https://github.com/Stacklys/oxlint-config/commit/d0f6b96)] - **style:** add typescriptOverrides configuration for TypeScript files by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`7462d04`](https://github.com/Stacklys/oxlint-config/commit/7462d04)] - **style:** remove 'typescript/no-unsafe-type-assertion' rule from typescriptRules by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`823dd2d`](https://github.com/Stacklys/oxlint-config/commit/823dd2d)] - **style:** update lint script to use cache and add globals dependency by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`7b5770f`](https://github.com/Stacklys/oxlint-config/commit/7b5770f)] - **style:** update astroOverride to disable 'import/no-unassigned-import' rule by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`fc04462`](https://github.com/Stacklys/oxlint-config/commit/fc04462)] - **style:** add requestAnimationFrame to globals in oxlintConfig by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.1] - 2026-10-21
 
 - [[`f3174bb`](https://github.com/Stacklys/oxlint-config/commit/f3174bb)] - **style:** update oxfmt.config.ts to include svelte configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
