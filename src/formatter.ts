@@ -15,7 +15,7 @@ const oxfmtConfig = (options: FormatterOption = defaultFormatter, extraOptions?:
     singleQuote: true,
     trailingComma: 'none',
     arrowParens: 'always',
-    ignorePatterns: IGNORE,
+    ignorePatterns: [...IGNORE, '**/*.css', '**/*.scss'],
     sortPackageJson: true,
     astro: options.astro,
     bracketSameLine: false,
