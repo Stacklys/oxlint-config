@@ -1,6 +1,6 @@
-import type { LinterOption } from '@src/global/type/config_option';
-import type { OxlintConfig } from 'oxlint';
+import { defineConfig } from 'oxlint';
 
+import { defaultLinter } from '@src/global/constant/default_option';
 import { oxlintGlobals } from '@src/global/util/adapt_global';
 import { pluginOption } from '@src/global/util/plugin_option';
 import { a11yRules } from '@src/module/a11y/a11y_rules';
@@ -17,9 +17,10 @@ import { typescriptRules } from '@src/module/typescript/typescript_rules';
 import { unicornRules } from '@src/module/unicorn/unicorn_rules';
 import { vitestRules } from '@src/module/vitest/vitest_rules';
 
-import { defineConfig } from 'oxlint';
+import type { LinterOption } from '@src/global/type/config_option';
+import type { OxlintConfig } from 'oxlint';
 
-const oxlintConfig = (options: LinterOption, extraOptions?: OxlintConfig): OxlintConfig => {
+const oxlintConfig = (options: LinterOption = defaultLinter, extraOptions?: OxlintConfig): OxlintConfig => {
   const plugins = pluginOption(options);
 
   const rules = {
