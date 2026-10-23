@@ -16,6 +16,15 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.3] - 2026-10-23
+
+- [[`667207d`](https://github.com/Stacklys/oxlint-config/commit/667207d)] - **style:** reorder type import for consistency in strict rule configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`0cb1ae3`](https://github.com/Stacklys/oxlint-config/commit/0cb1ae3)] - **style:** rename defaultOption to defaultLinter for consistency in linter configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`eec093c`](https://github.com/Stacklys/oxlint-config/commit/eec093c)] - **style:** reorder type imports for improved clarity in linter configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`b0938bd`](https://github.com/Stacklys/oxlint-config/commit/b0938bd)] - **style:** reorder type imports and sort groups in oxfmt configuration for clarity by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`580f432`](https://github.com/Stacklys/oxlint-config/commit/580f432)] - **style:** reorder groups in oxfmt configuration for better organization by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- [[`94a0473`](https://github.com/Stacklys/oxlint-config/commit/94a0473)] - **style:** add CSS and SCSS patterns to ignorePatterns in formatter configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.2] - 2026-10-22
 
 - [[`e250e67`](https://github.com/Stacklys/oxlint-config/commit/e250e67)] - **style:** remove cache option from lint script in package.json by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
