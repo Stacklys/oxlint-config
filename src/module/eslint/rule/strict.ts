@@ -1,6 +1,6 @@
-import type { RuleMap } from '@src/global/type/rule_type';
-
 import { COMPLEXITY, MAX_DEPTH, MAX_LINE, MAX_STATEMENTS } from '@src/global/constant/default_option';
+
+import type { RuleMap } from '@src/global/type/rule_type';
 
 const strictRules: RuleMap = {
   'accessor-pairs': 'error',
