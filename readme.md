@@ -272,10 +272,6 @@ const config = oxfmtConfig({
     partitionByNewline: false,
     internalPattern: ['~/', '@/', '@', '#'],
     groups: [
-      'type',
-      'side_effect_style',
-      'side_effect',
-      'style',
       'index',
       'sibling',
       'parent',
@@ -283,7 +279,11 @@ const config = oxfmtConfig({
       'internal',
       'builtin',
       'external',
-      'import'
+      'import',
+      'type',
+      'side_effect_style',
+      'side_effect',
+      'style'
     ]
   },
   svelte: Boolean(options.svelte),
