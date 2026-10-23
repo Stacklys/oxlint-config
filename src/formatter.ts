@@ -1,10 +1,10 @@
-import type { FormatterOption } from '@src/global/type/config_option';
-import type { OxfmtConfig } from 'oxfmt';
+import { defineConfig } from 'oxfmt';
 
 import { INDENT, MAX_LINE_LENGTH, defaultFormatter } from '@src/global/constant/default_option';
 import { IGNORE } from '@src/global/constant/ignore';
 
-import { defineConfig } from 'oxfmt';
+import type { FormatterOption } from '@src/global/type/config_option';
+import type { OxfmtConfig } from 'oxfmt';
 
 const oxfmtConfig = (options: FormatterOption = defaultFormatter, extraOptions?: OxfmtConfig) => {
   const config = defineConfig({
@@ -36,18 +36,18 @@ const oxfmtConfig = (options: FormatterOption = defaultFormatter, extraOptions?:
       partitionByNewline: false,
       internalPattern: ['~/', '@/', '@', '#'],
       groups: [
-        'type',
         'side_effect_style',
         'side_effect',
-        'style',
         'index',
         'sibling',
         'parent',
         'subpath',
+        'external',
         'internal',
         'builtin',
-        'external',
-        'import'
+        'import',
+        'type',
+        'style'
       ]
     },
     svelte: Boolean(options.svelte),
