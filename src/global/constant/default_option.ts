@@ -12,10 +12,10 @@ const defaultFormatter = {
   svelte: false
 };
 
-const defaultOption: LinterOption = {
+const defaultLinter: LinterOption = {
   typescript: true,
   unicorn: true,
   vitest: true
 };
 
-export { INDENT, defaultOption, MAX_LINE, MAX_DEPTH, COMPLEXITY, MAX_STATEMENTS, MAX_LINE_LENGTH, defaultFormatter };
+export { INDENT, defaultLinter, MAX_LINE, MAX_DEPTH, COMPLEXITY, MAX_STATEMENTS, MAX_LINE_LENGTH, defaultFormatter };
