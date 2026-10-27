@@ -53,7 +53,7 @@
     "oxlint-tsgolint": "^7.0.2004"
   },
   "devDependencies": {
-    "@stacklys/tsconfig": "^1.0.0",
+    "@stacklys/tsconfig": "^1.0.2",
     "@types/node": "^26.6.5",
     "gitlys": "^2.2.4",
     "globals": "^17.13.0",
