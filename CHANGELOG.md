@@ -16,6 +16,10 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.4] - 2026-10-27
+
+- [[`90ad256`](https://github.com/Stacklys/oxlint-config/commit/90ad256)] - **style:** update dependency versions to use caret (^) for flexibility by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.3] - 2026-10-23
 
 - [[`667207d`](https://github.com/Stacklys/oxlint-config/commit/667207d)] - **style:** reorder type import for consistency in strict rule configuration by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
